@@ -2,7 +2,7 @@
 title: "Xaris（文章制作支援ツール）の技術構成"
 emoji: "🌊"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["xaris", "ai", "prosemirror", "svelte"]
+topics: ["Xaris", "AI", "Svelte", "Supabase", "ProseMirror"]
 published: false
 ---
 
@@ -89,7 +89,7 @@ xaris のリポジトリ内から、以下をそれぞれ別プロジェクト�
 「パラメータに渡すモデル名を変えるだけで、各プロバイダのAIにリクエストを送れるやつ」が欲しい。LangChain のやつは複雑すぎるように思い、しかしいい感じのが見つけられないので自前で実装している。[Vercel AI SDK](https://sdk.vercel.ai/) がそういう感じに変化しているっぽいが、まだテキスト生成しか対応してなさそう & 好みじゃない。[portkey](https://portkey.ai/) みたく、「OpenAI SDK 経由で OpenAI 以外のプロバイダのAIにもリクエストできるようにする」がいいと思ったので、そんな感じのリファクタを企んでいる。portkey を契約するのは「管理プラットフォームが増えるのを避けたい、データが外部に溜まるのを避けたい」などの理由で避けている。
 
 ### Admin 画面
-![xaris admin](./xaris_admin.png)
+![xaris admin](/images/xaris-tech-stack/xaris_admin.png)
 
 - [TanStack Table](https://tanstack.com/table/latest) - 多機能なテーブルが実装できるライブラリ。プロンプトの設定をする Excel 的なのを用意している。
 
