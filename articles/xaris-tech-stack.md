@@ -19,7 +19,7 @@ ChatGPTの世界的バズである。問いかけに対し、みたこともな�
 
 [Xaris](https://xaris.ai/)（カリス）はPCで文章制作する際に使うエディタアプリである。画面左にChatGPT（のようなチャット画面）、画面右にNotion（のようなテキストエディタ）が付いている。裏で運営が多くのプロンプト（AIに送る指示文）を組んでおり、ユーザーは Xaris の指示に従いながら文章を仕上げていくことができる。
 
-<video controls src="./xaris_seo_demo.mp4"></video>
+<video controls src="/images/xaris-tech-stack/xaris_seo_demo.mp4"></video>
 
 
 ### Case 1. SEO記事ライター、太郎🙂
