@@ -3,7 +3,7 @@ title: "Xaris（文章制作支援ツール）の技術構成"
 emoji: "🧝‍♀️"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Xaris", "AI", "Svelte", "Supabase", "ProseMirror"]
-published: false
+published: true
 ---
 
 
@@ -65,7 +65,7 @@ xaris のリポジトリ内から、以下をそれぞれ別プロジェクト�
 ## 技術構成
 
 - [Svelte/SvelteKit](https://svelte.dev/) - フロント・バックエンド。他フレームワークよりネストを浅く、概念数を少なく、簡素に実装できそうで採用。ただエンジニアの採用に困るくさい。確かに旅先で話すエンジニアに「Svelte 使ってます」と話しても「それおいしい？」とよく言われる。エンジニア求ム。
-- [Supabase](https://supabase.com/) - データベース。Postgres を楽にいじるためのクライアントライブラリ、管理画面があるクラウドサービス。DB構造を管理画面から編集し、差分をマイグレーションファイルとして吐き出せる。DB周りで楽したいのと、Docker を自分で触りたくなくて採用。
+- [Supabase](https://supabase.com/) - データベース。DB環境（Postgres）をホストしてくれるクラウドサービス。DB操作・認証用クライアントライブラリ、DB管理画面、ストレージ機能（実体はS3）などが付いている。CLI でローカル環境・管理画面を起動してくれる。管理画面からDB構造を編集し、差分をマイグレーションファイルとして吐き出せる。Docker を自分で触りたくなくて採用。
 - [Cloudflare Pages](https://pages.cloudflare.com/) - デプロイ先。エッジ環境（Node環境ではないので Node API 依存のライブラリが使えなかったりする）。なんか速いらしい。GitHub 連携で勝手にデプロイしてくれる。各ブランチごとにプレビュー環境を用意してくれる。Docker を自分で触りたくなくて採用。
 - [VitePress](https://vitepress.dev/) - 開発者用ドキュメント
 
